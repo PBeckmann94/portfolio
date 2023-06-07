@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link, Element } from 'react-scroll';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './pages/home';
@@ -10,16 +10,25 @@ import Contact from './pages/contact';
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Element name="home">
+        <Home />
+      </Element>
+
+      <Element name="about">
+        <About />
+      </Element>
+
+      <Element name="projects">
+        <Projects />
+      </Element>
+
+      <Element name="contact">
+        <Contact />
+      </Element>
       <Footer />
-    </Router>
+    </div>
   );
 };
 
