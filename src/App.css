@@ -23,6 +23,14 @@ html {
     padding: 20px;
     text-align: center;
   }
+
+  .card2 {
+    display: flex; /* Use flexbox to position the elements */
+    flex-direction:column; /* Arrange the elements horizontally */
+    width: 400px; /* Increase the width to accommodate both elements */
+    padding: 20px;
+    text-align: center;
+  }
   
   .profile-picture {
     flex: 1; /* Take up the remaining space */
