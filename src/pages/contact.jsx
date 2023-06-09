@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="container2">
       <h2>Contact Me</h2>
-      <div className="card3">
+      <div className="card4">
         <form>
           <div className="form-group">
             <label htmlFor="name"></label>
