@@ -11,25 +11,37 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to="contact" className="nav-link" smooth={true} duration={500}>
-            <FontAwesomeIcon icon={faEnvelope} /></Link>
+          <Link to="contact" smooth={true} duration={500}>
+            <div className="nav-link-border">
+              <FontAwesomeIcon icon={faEnvelope} />
+            </div>
+          </Link>
         </li>
         <li className="nav-item">
-          <Link to="projects" className="nav-link" smooth={true} duration={500}>
-            <FontAwesomeIcon icon={faBriefcase} /></Link>
+          <Link to="projects" smooth={true} duration={500}>
+            <div className="nav-link-border">
+              <FontAwesomeIcon icon={faBriefcase} />
+            </div>
+          </Link>
         </li>
         <li className="nav-item">
-          <Link to="about" className="nav-link" smooth={true} duration={500}>
-            <FontAwesomeIcon icon={faUser} /></Link>
+          <Link to="about" smooth={true} duration={500}>
+            <div className="nav-link-border">
+              <FontAwesomeIcon icon={faUser} />
+            </div>
+          </Link>
         </li>
         <li className="nav-item">
-          <Link to="home" className="nav-link" smooth={true} duration={500}>
-            <FontAwesomeIcon icon={faHouse} /></Link>
+          <Link to="home" smooth={true} duration={500}>
+            <div className="nav-link-border">
+              <FontAwesomeIcon icon={faHouse} />
+            </div>
+          </Link>
         </li>
-
       </ul>
     </nav>
   );
 };
+
 
 export default Navbar;
