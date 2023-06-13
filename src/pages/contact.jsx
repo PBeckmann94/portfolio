@@ -1,16 +1,17 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import '../App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   const email = 'pbeckmann94@gmail.com';
 
   return (
-    <div className="container2">
+    <div className="container-contact">
       <h2>Contact Me</h2>
-      <div className="card4">
+      <div className="card5">
         <form>
+
           <div className="form-group">
             <label htmlFor="name"></label>
             <input type="text" id="name" name="name" placeholder="Name" />
@@ -25,14 +26,26 @@ const Contact = () => {
           </div>
           <div className="form-group">
             <label htmlFor="message"></label>
-            <input type="text" id="message" name="subject" placeholder="Message" />
+            <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
           </div>
           <button type="submit">Send message</button>
         </form>
-        <p>Phone: +47 913 77 620</p>
+        <div className="contact-icons">
+          <a href={`mailto:${email}`} className="contact-icon">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+          pbeckmann94@gmail.com
+          <div className="contact-icon">
+            <FontAwesomeIcon icon={faPhone} />
+          </div>
+          +47 913 77 620
+        </div>
       </div>
     </div>
   );
 };
 
 export default Contact;
+
+
+

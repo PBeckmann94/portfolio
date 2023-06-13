@@ -9,11 +9,75 @@ html {
     background-image: linear-gradient(to bottom, #fcfcfc 30%, #8b8b8b54 70%); 
   }
   
-  .container {
+  .container-home {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
+
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .container-about-h2 {
+    position: absolute;
+    top: 100%;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: "Century Gothic";
+  }
+  
+  .container-about .card2:nth-child(even) {
+    align-self: flex-end;
+  }
+
+  .container-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container-skills-h2 {
+    position: absolute;
+    top: 200%;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: "Century Gothic";
+  }
+
+  .container-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container-projects-h2 {
+    position: absolute;
+    top: 310%;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-family: "Century Gothic";
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .container-contact h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "Century Gothic";
   }
   
   .card {
@@ -24,52 +88,6 @@ html {
     text-align: center;
   }
 
-  .card2 {
-    font-family: Century Gothic;
-    display: flex;
-    background: linear-gradient(to top, #596770 30%, #acacb3 70%); 
-    flex-direction: column;
-    color: black;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    border: solid;
-    border-color:black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; /* Add border-radius to make the border rounded */
-    margin-left: 30px; /* Add margin-bottom to create space between each card */
-    transition: transform 0.3s ease;
-  }
-  
-  .card2:hover  {
-    transform: scale(1.05);
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
-  }
-
-  .card3 {
-    font-family: Century Gothic;
-    display: flex;
-    background: linear-gradient(to top, #596770 30%, #acacb3 70%); 
-    flex-direction: column;
-    color: black;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    border: solid;
-    border-color:black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; /* Add border-radius to make the border rounded */
-    margin-left: 30px; /* Add margin-bottom to create space between each card */
-    transition: transform 0.3s ease;
-  }
-  
-  .card3:hover  {
-    transform: scale(1.05);
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-
-  }
-  
   .profile-picture-container {
     position: relative;
     display: inline-block;
@@ -83,12 +101,16 @@ html {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid black;
+    border: 2px solid gray;
+    border-color:black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
   }
   
   .profile-picture-container:hover .profile-picture {
     transform: scale(1.1);
+    border-color:black;
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, 0.3);
   }
   
   .profile-picture-container:hover::after {
@@ -105,17 +127,16 @@ html {
   
   .description {
     flex: 2; /* Take up the remaining space */
-    text-align: center; /* Align the text to the left */
+    text-align: center; 
   }
   
   .description h1 {
     font-family: Century Gothic;
     font-size: 50px;
-    margin-bottom: 10px;
   }
   
   .description p {
-    font-size: 20px;
+    font-size: 30px;
     font-family: Century Gothic;
   }
 
@@ -169,37 +190,172 @@ html {
     color: rgb(179, 108, 108);
   }
 
-  .container2 {
+  .card2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    height: 100vh;
+    background-color: white;
+    color: black;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Add border-radius to make the border rounded */
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px; /* Add margin-bottom to create space between each card */
   }
   
+  .card2 p {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Add border-radius to make the border rounded */
+    margin-left: 30px; /* Add margin-bottom to create space between each card */
+    line-height: 1.2;
+  }
+  
+  .card3 h2 {
+    background-color: rgb(90, 136, 189);
+    color: white;
+    margin-top: 0; /* Remove the default margin for the h2 element */
+    padding: 10px; /* Add some padding to create space within the background */
+    border-top-left-radius: 10px; /* Add border-radius to the top-left corner */
+    border-top-right-radius: 10px; /* Add border-radius to the top-right corner */
+  }
+
+  .card3 p {
+    margin-top: 4px;
+    font-size: large;
+    font-weight: bold;
+  }
+
   .card4 {
+    display: flex;
+    flex-direction: column;
+    font-family: "eurostile", sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card4 .project-img-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card4 .project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 14px;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card4:hover .project-img {
+    opacity: 0;
+  }
+  
+  .card4 .card-text {
+    position: absolute;
+    background-color: rgb(80, 73, 73);
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
-    padding: 30px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin: 120px 20px 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
   
-  .container2 h2 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin: 100px 0 0 50px;
-    font-family: "Century Gothic";
+  .card4:hover .card-text {
+    opacity: 1;
+  }
+  
+  .card4 h2 {
+    margin: 10px;
+  }
+
+  .card4 p {
+    margin: 10px;
+  }
+
+  .card4 p2 {
+    margin: 10px;
+    font-weight: bold;
+  }
+  
+  .card4 .card-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(102, 102, 187);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card4:hover .card-links a {
+    opacity: 1;
+  }
+  
+  .card4 .card-links a:hover {
+    background-color: rgb(58, 58, 212);
+  }
+  
+  .card5 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 30px;
+    line-height: 1.2;
   }
   
   form {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 200px;
+    align-items: center;
+    justify-content: center;
   }
   
   .form-group {
@@ -218,6 +374,15 @@ html {
     border-bottom: 1px solid #ccc;
     width: 100%;
   }
+
+  textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    resize: vertical; /* Optional: Allow vertical resizing */
+  }
+  
   
   button[type="submit"] {
     width: 60%;
@@ -232,5 +397,131 @@ html {
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+  .contact-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   
+  .contact-icon {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #000203;
+    text-decoration: none;
+  }
+  
+  .project-img-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    margin-left: 10px;
+  }
+  
+  /* Media Queries for Mobile View */
+
+@media (max-width: 768px) {
+
+  .container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+  }
+
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .spacer {
+    display: hidden;
+  }
+  
+
+  .navbar {
+    display: none; /* Hide the navbar in mobile view */
+  }
+
+  .card3 {
+    width: 70%;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 20px;
+
+  }
+  .card4 {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  
+  .card4 .project-img-card {
+    height: 200px;
+  }
+  
+  .card4 .card-text {
+    padding: 10px;
+  }
+  
+  .card4 .card-links {
+    flex-wrap: wrap;
+  }
+  
+  .card4 .card-links a {
+    margin: 4px;
+  }
+
+  .container-projects-h2 {
+    position: absolute;
+    top: 500%;
+  }
+
+  .profile-picture-container {
+    margin-left: 105px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .description h1 {
+    font-size: 36px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .container2 h2 {
+    font-size: 36px;
+    margin: 50px 0 0 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
   

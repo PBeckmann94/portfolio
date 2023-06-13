@@ -8,15 +8,14 @@ const Home = () => {
   const email = 'pbeckmann94@gmail.com';
 
   return (
-    <div className="container">
+    <div className="container-home">
       <div className="card">
         <div className="description">
-          <h1>Hi there!</h1>
-          <p>
-            I'm Patrick Beckmann, a passionate web developer with a knack for creating dynamic and
-            user-friendly web applications. With a strong foundation in front-end development technologies like
-            React and JavaScript, I love turning ideas into reality through clean and efficient code.
-          </p>
+          <p>Hi there! I'm</p>
+          <h1>
+            Patrick Beckmann
+          </h1>
+          <h2>Front-End developer</h2>
           <a href="https://www.facebook.com/patrick.beckmann.31/" className="social-link-fb" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>

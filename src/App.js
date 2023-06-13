@@ -4,7 +4,8 @@ import { Link, Element } from 'react-scroll';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './pages/home';
-import About from './pages/about';
+import Skills from './pages/skills';
+import About from './pages/about'
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 
@@ -18,6 +19,10 @@ const App = () => {
 
       <Element name="about">
         <About />
+      </Element>
+
+      <Element name="skills">
+        <Skills />
       </Element>
 
       <Element name="projects">
