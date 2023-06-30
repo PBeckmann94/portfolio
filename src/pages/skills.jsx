@@ -35,9 +35,9 @@ const Skills = () => {
         <h2>
         <FontAwesomeIcon icon={faScrewdriverWrench} /> Other</h2>
         <p>Github</p>
+        <p>Wordpress</p>
         <p>VS Code</p>
         <p>Scrum</p>
-        <p>Trello</p>
       </div>
     </div>
   );

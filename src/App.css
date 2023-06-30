@@ -18,8 +18,9 @@ html {
 
   .container-about {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
   }
 
@@ -29,10 +30,6 @@ html {
     font-size: 42px;
     text-transform: uppercase;
     font-family: "Century Gothic";
-  }
-  
-  .container-about .card2:nth-child(even) {
-    align-self: flex-end;
   }
 
   .container-skills {
@@ -142,7 +139,7 @@ html {
 
   .spacer {
     flex: 1; /* Take up the remaining space */
-    margin-bottom: 20px; /* Adjust the margin value as needed */
+    margin-bottom: 20px; 
   }
   
   
@@ -209,8 +206,8 @@ html {
   .card2 p {
     display: flex;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .card3 {
@@ -436,18 +433,25 @@ html {
     align-items: center;
   }
 
-  .container-skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200vh;
-  }
-
   .container-about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200vh;
+    height: 100vh;
+  }
+
+  .container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 115vh;
+  }
+
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
   }
 
   .card {
@@ -465,21 +469,39 @@ html {
     display: none; /* Hide the navbar in mobile view */
   }
 
+  .card2 {
+    width: 80%;
+    height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 20px;
+  }
+
   .card3 {
     width: 70%;
     height: auto;
     margin-left: 4px;
     margin-right: 4px;
-    margin-bottom: 20px;
-
+    margin-bottom: 10px;
+    margin-top: 1px;
   }
+
+  .card3 p {
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+
   .card4 {
     width: 90%;
     max-width: 400px;
     margin-bottom: 20px;
     height: auto;
   }
-  
+
+  .card4 h1 {
+    display: none;
+  }
+
   .card4 .project-img-card {
     height: 200px;
   }
@@ -498,7 +520,6 @@ html {
 
   .container-projects-h2 {
     position: absolute;
-    top: 500%;
   }
 
   .profile-picture-container {
