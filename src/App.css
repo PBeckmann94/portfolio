@@ -496,6 +496,8 @@ html {
     max-width: 400px;
     margin-bottom: 20px;
     height: auto;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .card4 h1 {
@@ -523,11 +525,13 @@ html {
   }
 
   .profile-picture-container {
-    margin-left: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 200px;
   }
-
+  
   .description h1 {
     font-size: 36px;
   }
