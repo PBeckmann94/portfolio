@@ -10,7 +10,6 @@ const Home = () => {
   return (
     <div className="container-home">
       <div className="card">
-        <div className="scroll-animation-hidden">
         <div className="description">
           <p>Hi there! I'm</p>
           <h1>
@@ -30,14 +29,11 @@ const Home = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
-        </div>
         <div className="spacer" /> {/* Add an empty div for spacing */}
-        <div className="scroll-animation-hidden">
         <div class="profile-picture-container">
           <img class="profile-picture" src="IMG_20220621_180350 (2).jpg" alt="Profile" />
         </div>
       </div>
-    </div>
     </div>
   );
 };
