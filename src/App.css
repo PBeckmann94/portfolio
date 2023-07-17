@@ -91,6 +91,19 @@ html {
     text-align: center;
   }
 
+  .loaded-animation-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 2s;
+  }
+
+  .loaded-animation-show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
   .profile-picture-container {
     position: relative;
     display: inline-block;
@@ -117,7 +130,7 @@ html {
   }
   
   .profile-picture-container:hover::after {
-    content: "Thats me";
+    content: "That's me";
     position: absolute;
     top: 120%;
     left: 50%;
@@ -218,14 +231,14 @@ html {
   .scroll-animation-hidden {
     opacity: 0;
     filter: blur(5px);
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: all 2s;
   }
 
   .scroll-animation-show {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   .card3 {

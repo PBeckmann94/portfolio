@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import applyLoadedAnimation from '../javascript/loadedAnimation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +12,7 @@ const Home = () => {
     <div className="container-home">
       <div className="card">
         <div className="description">
+        <div className="loaded-animation-hidden">
           <p>Hi there! I'm</p>
           <h1>
             Patrick Beckmann
@@ -29,11 +31,14 @@ const Home = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
+        </div>
+        <div className="loaded-animation-hidden">
         <div className="spacer" /> {/* Add an empty div for spacing */}
         <div class="profile-picture-container">
           <img class="profile-picture" src="IMG_20220621_180350 (2).jpg" alt="Profile" />
         </div>
       </div>
+    </div>
     </div>
   );
 };
