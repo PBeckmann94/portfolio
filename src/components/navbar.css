@@ -27,6 +27,7 @@
   background-color: #e4e4e4;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  position: relative; /* Add this */
 }
 
 .nav-link-border:hover {
@@ -45,3 +46,22 @@
 .nav-link:hover {
   color: white;
 }
+
+.popup-text {
+  position: absolute;
+  left: 80%; /* Position to the right of the icon */
+  background-color: #999; /* Background color of the popup text */
+  color: white; /* Text color */
+  padding: 5px 10px; /* Padding for the text */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Hidden by default */
+  pointer-events: none; /* Prevents the popup text from interfering with clicks */
+  transition: opacity 0.3s ease;
+  z-index: -1; /* Place it behind the icons */
+}
+
+.nav-link-border:hover .popup-text {
+  opacity: 1;
+}
+
+

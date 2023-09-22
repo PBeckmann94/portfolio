@@ -19,7 +19,7 @@ const About = () => {
       <div className="card2">
         <div className="scroll-animation-hidden">
           <h2>Who I am</h2>
-          <p>I'm a passionate web developer with a knack for creating dynamic and
+          <p>I'm a passionate developer with a knack for creating dynamic and
             user-friendly web applications. With a strong foundation in front-end development technologies like
             React and JavaScript, I love turning ideas into reality through clean and efficient code.</p>
         </div>
@@ -27,7 +27,7 @@ const About = () => {
       <div className="card2">
         <div className="scroll-animation-hidden">
           <h2>What I Do</h2>
-          <p> I focus on improving my front-end capabilities. I strive to enhance my skills in creating visually appealing and user-friendly interfaces.
+          <p> I focus on improving my capabilities. I strive to enhance my skills in creating visually appealing and user-friendly interfaces.
             Outside of work, I enjoy gaming in my free time. Gaming provides me with a creative outlet and a means to unwind.</p>
         </div>
       </div>

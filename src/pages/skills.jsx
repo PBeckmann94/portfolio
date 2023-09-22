@@ -15,7 +15,7 @@ const Skills = () => {
         <h2>
         <FontAwesomeIcon icon={faCode} /> Front-End</h2>
         <p>HTML</p>
-        <p>CSS</p>
+        <p>CSS/SCSS</p>
         <p>React</p>
         <p>JavaScript</p>
         <p>Rails</p>
@@ -24,8 +24,8 @@ const Skills = () => {
       <div className="card3">
         <h2>
         <FontAwesomeIcon icon={faCodeBranch} /> Back-End</h2>
-        <p>NodeJS</p>
         <p>Ruby</p>
+        <p>NodeJS</p>
         <p>MongoDB</p>
         <p>Firebase</p>
         <p>PostgreSQL</p>

@@ -17,7 +17,7 @@ const Home = () => {
           <h1>
             Patrick Beckmann
           </h1>
-          <h2>Front-End developer</h2>
+          <h2>Full-stack developer</h2>
           <a href="https://www.facebook.com/patrick.beckmann.31/" className="social-link-fb" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
